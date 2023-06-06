@@ -1,0 +1,29 @@
+.Loading {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheel {
+  height: 5em;
+  width: 5em;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .wheel {
+    animation: wheel-spin infinite 1s linear;
+  }
+}
+
+@keyframes wheel-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

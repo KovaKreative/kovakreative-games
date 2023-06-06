@@ -1,0 +1,41 @@
+.GameCard {
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 4px;
+  background-color: #452c38; 
+  display: flex;
+  flex: 1;
+  color: rgb(255, 219, 91);
+  align-items: center;
+}
+
+.GameCard>img {
+  flex: 1;
+  border-radius: 5px;
+  border: 1.4px solid rgb(255, 219, 91, 0.6);
+}
+
+.GameCard>div {
+  flex: 2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header>h1 {
+  flex: 3;
+}
+
+header>h4 {
+  flex: 1;
+}
+
+.game-info {
+  margin: 0.5em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
