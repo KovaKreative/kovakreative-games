@@ -1,4 +1,6 @@
 .GameList {
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
 }
