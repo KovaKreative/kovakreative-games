@@ -1,13 +1,13 @@
 import './App.css';
 
-import Splash from './components/Splash';
+import Hero from './components/Hero';
 import Main from './components/Main';
 import Foot from './components/Foot';
 
 function App() {
   return (
     <div className="App">
-      <Splash />
+      <Hero />
       <Main />
       <Foot />
     </div>
