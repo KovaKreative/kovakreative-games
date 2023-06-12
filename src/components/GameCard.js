@@ -1,5 +1,7 @@
 import './GameCard.css';
 
+import Button from './Button';
+
 export default function GameCard(props) {
 
   const { title, description, url, published, image } = props;
@@ -13,9 +15,9 @@ export default function GameCard(props) {
           <h4>Published: {new Date(published).toLocaleDateString('en-CA')}</h4>
         </header>
         <p className='description'>{description}</p>
-        <footer>
-          <button href={url} target='_blank'>Visit</button>
-        </footer>
+          <Button url={url} />
+        {/* <footer>
+        </footer> */}
       </div>
     </div>
   );
