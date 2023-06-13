@@ -1,9 +1,12 @@
 .GameList {
-  display: inline-flex;
+  margin: 1em 15vw;
+}
+
+.game-cards {
+  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: stretch;
-  margin: 1em 15vw;
+  align-items: stretch;  
   gap: 0.5em;
 }
 

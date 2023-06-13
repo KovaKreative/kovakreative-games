@@ -35,10 +35,12 @@ export default function GamesList() {
   });
 
   return (
-    <section className='GameList'>
+    <div className='GameList'>
       <h1>Games</h1>
-      {games.length ? gameCards : <Loading message="Retrieving games from itch.io"/>}
-    </section>
+      <section className='game-cards'>
+        {games.length ? gameCards : <Loading message="Retrieving games from itch.io" />}
+      </section>
+    </div>
   );
 
 }
