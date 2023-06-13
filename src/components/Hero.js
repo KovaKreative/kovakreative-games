@@ -19,7 +19,7 @@ export default function Hero() {
         src={coverImage}
         alt=""
       />
-      <img className="logo" src={banner} />
+      <img className="logo" src={banner} alt="KovaKreative" />
       <p className="tagline">KovaKreative is an indepentent solo video game designer and developer striving to make fun, visually engaging games that anyone can enjoy.</p>
     </section>
   );

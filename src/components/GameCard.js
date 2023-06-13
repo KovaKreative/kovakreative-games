@@ -8,7 +8,7 @@ export default function GameCard(props) {
 
   return (
     <div className='GameCard'>
-      <img className='cover' src={image} alt='Cover Image' />
+      <img className='cover' src={image} alt='Cover' />
       <div className='game-info'>
         <header>
           <h1>{title}</h1>

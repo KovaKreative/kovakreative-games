@@ -27,7 +27,7 @@ export default function GamesList() {
         setGames(games);
       })
       .catch(err => console.log(err));
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const gameCards = games.slice(0, 6).map((g, i) => {

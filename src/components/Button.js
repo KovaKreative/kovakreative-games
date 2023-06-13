@@ -8,6 +8,7 @@ export default function Button(props) {
       className="Button"
       href={props.url}
       target="_blank"
+      rel="noreferrer"
     >
       {props.label}
     </a>
