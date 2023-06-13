@@ -9,16 +9,14 @@ export default function GamesList() {
 
   const [games, setGames] = useState([]);
 
-  const KEY = process.env.REACT_APP_API_KEY;
-
   useEffect(() => {
-
     axios({
       method: 'GET',
-      url: `/api/1/${KEY}/my-games`,
-      proxy: 'http://itch.io'
+      url: `/api/games.php`,
+      proxy: 'http://www.games.kovakreative.com'
     })
       .then(res => {
+        console.log(res);
         const games = res.data.games.filter(g => g.classification === 'game').filter(g => g.published).sort((a, b) => {
           const dateA = new Date(a.published_at || Date.now());
           const dateB = new Date(b.published_at || Date.now());
@@ -38,9 +36,9 @@ export default function GamesList() {
     <div className='GameList'>
       <h1>Games</h1>
       <section className='game-cards'>
-        {games.length ? gameCards : <Loading message="Retrieving games from itch.io" />}
+        {games.length ? gameCards : <Loading message="Retrieving games." />}
       </section>
     </div>
   );
 
-}
+};

@@ -8,8 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 5%;
-  padding-right: 15%;
+  padding-left: 15vw;
 }
 
 .hero-bg {
@@ -23,12 +22,12 @@
 
 .logo {
   position: relative;
-  width: 100%;
+  max-height: 50%;
 }
 
 .tagline {
+  position: relative;
   color: #ffdb5b;
   font-size: 20px;
-  position: relative;
   text-align: justify;
 }
