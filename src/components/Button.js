@@ -2,8 +2,6 @@ import './Button.css';
 
 export default function Button(props) {
 
-  console.log(props.url);
-
   return (
 
     <a
@@ -11,7 +9,7 @@ export default function Button(props) {
       href={props.url}
       target="_blank"
     >
-      Visit
+      {props.label}
     </a>
 
   );
