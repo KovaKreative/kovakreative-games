@@ -3,6 +3,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
-  width: 80vw;
-  margin: auto;
+  /* width: 80vw; */
+  margin: 0% 15vw;
 }
