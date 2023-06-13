@@ -36,7 +36,8 @@ export default function GamesList() {
 
   return (
     <section className='GameList'>
-      {games.length ? gameCards : <Loading />}
+      <h1>Games</h1>
+      {games.length ? gameCards : <Loading message="Retrieving games from itch.io"/>}
     </section>
   );
 
