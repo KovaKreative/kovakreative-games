@@ -3,6 +3,12 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
-  /* width: 80vw; */
-  margin: 0% 15vw;
+  margin: 1em 15vw;
+  gap: 0.5em;
+}
+
+h1 {
+  color: #ffdb5b;
+  font-size: 48px;
+  margin: 0%;
 }
