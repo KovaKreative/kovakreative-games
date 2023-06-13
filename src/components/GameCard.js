@@ -15,9 +15,7 @@ export default function GameCard(props) {
           <h4>Published: {new Date(published).toLocaleDateString('en-CA')}</h4>
         </header>
         <p className='description'>{description}</p>
-          <Button url={url} />
-        {/* <footer>
-        </footer> */}
+          <Button url={url} label="Visit" />
       </div>
     </div>
   );
