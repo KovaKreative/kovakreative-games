@@ -15,7 +15,7 @@ export default function GameCard(props) {
           <h4>Published: {new Date(published).toLocaleDateString('en-CA')}</h4>
         </header>
         <p className='description'>{description}</p>
-          <Button url={url} label="Visit" />
+          <Button url={url} label="Play on itch.io" />
       </div>
     </div>
   );
