@@ -1,14 +1,15 @@
 .Hero {
   overflow: hidden;
   position: relative;
-  height: 30vh;
-  min-height: 256px;
-  background-color: #080312;
+  /* height: 20vh; */
+  /* min-height: 256px; */
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 15vw;
+  gap: 1em;
+  padding: 2em 15vw;
 }
 
 .hero-bg {
@@ -23,11 +24,12 @@
 .logo {
   position: relative;
   max-height: 50%;
+  max-width: 70%;
 }
 
 .tagline {
   position: relative;
   color: #ffdb5b;
-  font-size: 20px;
+  font-size: 24px;
   text-align: justify;
 }

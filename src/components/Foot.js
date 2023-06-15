@@ -4,7 +4,7 @@ export default function Foot() {
   return (
     <footer className="Foot">
       <p>
-      © Copyright 2023, KovaKreative. All Rights Reserved. 
+      Built by KovaKreative using React with NES.css
       </p>
       {/* <div className="social">
 

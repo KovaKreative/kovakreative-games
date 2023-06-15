@@ -5,7 +5,7 @@ export default function Button(props) {
   return (
 
     <a
-      className="Button"
+      className="Button nes-btn is-primary"
       href={props.url}
       target="_blank"
       rel="noreferrer"

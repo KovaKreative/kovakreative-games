@@ -1,4 +1,4 @@
-import logo from '../images/LoadWheel.png';
+import logo from '../assets/LoadWheel.png';
 import './Loading.css';
 
 export default function Loading(props) {
