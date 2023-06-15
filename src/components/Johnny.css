@@ -9,4 +9,5 @@
   -o-transition: top 1s ease-in-out, left 1s ease-in-out;
   transition: top 1s ease-in-out, left 1s ease-in-out;
   pointer-events: none;
-}
+  filter:contrast(0.8) drop-shadow(0px 5px 5px #000C);;
+  }
