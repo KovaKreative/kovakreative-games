@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Main from './components/Main';
 import Foot from './components/Foot';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Hero />
@@ -13,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
