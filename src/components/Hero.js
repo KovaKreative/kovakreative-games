@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <section className="Hero">
       <img className="logo" src={banner} alt="KovaKreative" />
-      <p className="tagline">KovaKreative is an indepentent solo video game designer and developer striving to make fun, visually engaging games that anyone can enjoy.</p>
+      <p className="tagline">KovaKreative is an independent solo video game designer and developer striving to make fun, visually engaging games that anyone can enjoy.</p>
     </section>
   );
 }
