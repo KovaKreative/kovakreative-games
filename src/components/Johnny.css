@@ -1,5 +1,12 @@
 .Johnny {
   position: absolute;
+  top: 0px;
+  left: 0px;
   width: 128px;
   image-rendering: pixelated;
+  -webkit-transition: top 1s ease-in-out, left 1s ease-in-out;
+  -moz-transition: top 1s ease-in-out, left 1s ease-in-out;
+  -o-transition: top 1s ease-in-out, left 1s ease-in-out;
+  transition: top 1s ease-in-out, left 1s ease-in-out;
+  pointer-events: none;
 }

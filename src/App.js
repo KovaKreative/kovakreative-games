@@ -6,11 +6,14 @@ import Foot from './components/Foot';
 import Johnny from './components/Johnny';
 
 export default function App() {
+
   return (
     <div className="App">
-      <Hero />
-      <Main />
-      <Foot />
+      <div className="scroll">
+        <Hero />
+        <Main />
+        <Foot />
+      </div>
       <Johnny />
     </div>
   );
