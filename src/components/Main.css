@@ -1,3 +1,9 @@
 .Main {
-  
+  margin: 1em 15vw;
+  font-size: 24px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
 }
