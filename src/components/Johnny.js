@@ -22,7 +22,7 @@ export default function Johnny() {
       setMoving(true);
       const targetX = mousePosition.x - 64;
       const targetY = mousePosition.y - 64;
-      setJohnny({ x: targetX, y: targetY, xScale: Math.sign(mousePosition.x - johnny.x), moving: true });
+      setJohnny({ x: targetX, y: targetY, xScale: Math.sign(mousePosition.x - johnny.x - 64), moving: true });
     }
 
   }, [johnny, mousePosition]);
