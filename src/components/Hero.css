@@ -1,4 +1,5 @@
 .Hero {
+  flex-grow: 1;
   overflow: hidden;
   position: relative;
   /* height: 20vh; */

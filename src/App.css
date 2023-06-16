@@ -1,4 +1,6 @@
 .scroll {
-  height: 100vh;
-  overflow: scroll;
+  min-height: 100vh;
+  /* overflow: scroll; */
+  display: flex;
+  flex-direction: column;
 }

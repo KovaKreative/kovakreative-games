@@ -2,6 +2,7 @@ import './GameList.css';
 import { useEffect, useState } from 'react';
 import GameCard from './GameCard';
 import Loading from './Loading';
+import Fade from 'react-reveal/Fade';
 
 import axios from 'axios';
 
@@ -22,7 +23,7 @@ export default function GamesList() {
           const dateB = new Date(b.published_at || Date.now());
           return dateB - dateA;
         });
-        setGames(games);
+        setTimeout(() => setGames(games), 1000);
       })
       .catch(err => console.log(err));
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -34,10 +35,9 @@ export default function GamesList() {
 
   return (
     <div className='GameList'>
-      <h1>Games</h1>
-      <section className='game-cards'>
-        {games.length ? gameCards : <Loading message="Retrieving games from itch.io" />}
-      </section>
+      
+        {games.length ? <Fade bottom><section className='game-cards'>{gameCards}</section></Fade> : <Fade><Loading message="Retrieving games from itch.io" /></Fade>}
+      
     </div>
   );
 
