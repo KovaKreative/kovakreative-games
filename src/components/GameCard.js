@@ -8,7 +8,7 @@ export default function GameCard(props) {
 
   return (
     <div className='GameCard nes-container is-dark with-title'>
-      <h1 className='title'>{title}</h1>
+      <h1 className='title gamecard-title'>{title}</h1>
       <div className='card'>
         <img className='cover' src={image} alt='Cover' />
         <div className='game-info'>

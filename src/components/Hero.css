@@ -1,16 +1,24 @@
 .Hero {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 2em 15vw;
+  gap: 1em;
+}
+
+.about {
+  flex: 2 1;
   overflow: hidden;
   position: relative;
   /* height: 20vh; */
   /* min-height: 256px; */
-  background-color: black;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 1em;
-  padding: 2em 15vw;
 }
 
 .hero-bg {
@@ -29,8 +37,34 @@
 }
 
 .tagline {
+  flex: 3;
   position: relative;
   color: #ffdb5b;
-  font-size: 24px;
+  font-size: 18px;
   text-align: justify;
+}
+
+.Nav {
+  flex-shrink: 1;
+}
+
+.menu-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1023px) {
+  .about {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .menu-box {
+    flex-direction: row;
+  }
 }

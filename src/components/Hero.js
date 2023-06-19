@@ -1,21 +1,22 @@
 import './Hero.css';
 
 import banner from '../assets/KovaGamesBanner.png';
-import bkg1 from '../assets/bkg1.png';
-import bkg2 from '../assets/bkg2.jpg';
-import bkg3 from '../assets/bkg3.png';
-import bkg4 from '../assets/bkg4.jpg';
 
-export default function Hero() {
+import Nav from './Nav';
 
-  const coverImages = [bkg1, bkg2, bkg3, bkg4];
-  const index = Math.floor(Math.random() * coverImages.length);
-  const coverImage = coverImages[index];
+import { Slide } from 'react-reveal';
+
+export default function Hero(props) {
 
   return (
     <section className="Hero">
-      <img className="logo" src={banner} alt="KovaKreative" />
-      <p className="tagline">KovaKreative is an independent solo video game designer and developer striving to make fun, visually engaging games that anyone can enjoy.</p>
+      <Slide top>
+        <img className="logo" src={banner} alt="KovaKreative" />
+        <div className="about">
+          <p className="tagline">KovaKreative is an independent solo video game designer and developer striving to make fun, visually engaging games that anyone can enjoy.</p>
+          <Nav onChange={props.onNavChange} />
+        </div>
+      </Slide>
     </section>
   );
 }

@@ -5,13 +5,17 @@ import Main from './components/Main';
 import Foot from './components/Foot';
 import Johnny from './components/Johnny';
 
+import { useState } from 'react';
+
 export default function App() {
+
+  const [screen, setScreen] = useState('games');
 
   return (
     <div className="App">
       <div className="scroll">
-        <Hero />
-        <Main />
+        <Hero onNavChange={setScreen} />
+        <Main screen={screen} />
         <Foot />
       </div>
       <Johnny />

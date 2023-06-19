@@ -8,6 +8,10 @@
   /* text-justify: distribute-all-lines; */
 }
 
+.FeaturedGame > h1.title.feature-title {
+  font-size: 32px;
+}
+
 iframe {
   border: 4px solid white;
   background-color: #E7EEFF55;

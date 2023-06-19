@@ -6,8 +6,9 @@
   flex-grow: 1;
 }
 
-.title {
-  font-size: 32px !important;
+
+.GameCard > h1.gamecard-title.title {
+  font-size: 32px;
 }
 
 .card {

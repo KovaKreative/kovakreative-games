@@ -17,7 +17,6 @@ export default function GamesList() {
       proxy: 'http://www.games.kovakreative.com'
     })
       .then(res => {
-        console.log(res);
         const games = res.data.games.filter(g => g.classification === 'game').filter(g => g.published).sort((a, b) => {
           const dateA = new Date(a.published_at || Date.now());
           const dateB = new Date(b.published_at || Date.now());
@@ -35,9 +34,7 @@ export default function GamesList() {
 
   return (
     <div className='GameList'>
-      
-        {games.length ? <Fade bottom><section className='game-cards'>{gameCards}</section></Fade> : <Fade><Loading message="Retrieving games from itch.io" /></Fade>}
-      
+        {games.length ? <Fade><section className='game-cards'>{gameCards}</section></Fade> : <Fade><Loading message="Retrieving games from itch.io" /></Fade>}      
     </div>
   );
 
